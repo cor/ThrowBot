@@ -6,6 +6,8 @@ public class TurretController : MonoBehaviour {
 	public GameObject turretBase;
 	public GameObject cannonBase;
 
+	public float cannonRotationLimmit = 60f;
+
 	// Use this for initialization
 	void Start () {
 
@@ -26,6 +28,8 @@ public class TurretController : MonoBehaviour {
 	}
 
 	void rotateTurretCannon(float degrees) {
-		cannonBase.transform.Rotate(new Vector3(0, degrees, 0));
+
+		cannonBase.transform.localEulerAngles = new Vector3(Mathf.Clamp((cannonBase.transform.localEulerAngles.x + degrees), 0, 60), 0, 90);
+
 	}
 }
