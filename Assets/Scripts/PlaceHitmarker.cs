@@ -21,11 +21,15 @@ public class PlaceHitmarker : MonoBehaviour {
 
 	void OnCollisionEnter(Collision col) {
 		if (!placedHitmarker) {
-			if (col.gameObject.name == "Floor") {
+			if (col.gameObject.name == "Floor" || col.gameObject.name == "Target") {
 				Instantiate(hitmarker, transform.position, Quaternion.identity);
 				placedHitmarker = true;
 				if (destroyBulletAfterHitmarker) {
 					DestroyBullet();
+				}
+
+				if (col.gameObject.name == "Target") {
+					Debug.Log ("Target Hit!");
 				}
 			}
 		}
