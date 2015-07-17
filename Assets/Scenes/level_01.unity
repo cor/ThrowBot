@@ -181,33 +181,6 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 426762, guid: d484b406e92d44287a536329dc571a01, type: 2}
   m_PrefabInternal: {fileID: 1765851807}
---- !u!1 &226534226
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 226534227}
-  m_Layer: 0
-  m_Name: Hitmarker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &226534227
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 226534226}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
 --- !u!1 &266458040
 GameObject:
   m_ObjectHideFlags: 0
@@ -903,7 +876,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textMesh: {fileID: 1903126946}
-  prependString: 'target '
+  prependString: 'target
+
+'
 --- !u!1001 &1589164569
 Prefab:
   m_ObjectHideFlags: 0
