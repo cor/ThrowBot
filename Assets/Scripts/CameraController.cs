@@ -6,6 +6,8 @@ public class CameraController : MonoBehaviour {
 	public Transform turretCameraPosition;
 	public Transform pipeEnd;
 
+	public GameObject mostRecentBullet;
+
 	public float moveSpeed = 3;
 
 	private float startTime;

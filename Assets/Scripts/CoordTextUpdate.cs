@@ -8,7 +8,7 @@ public class CoordTextUpdate : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		textMesh.text = prependString + "\nx:" + transform.position.x + " z:" + transform.position.z;
+		textMesh.text = prependString + "x:" + transform.position.x + " z:" + transform.position.z;
 
 	}
 	
